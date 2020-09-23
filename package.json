@@ -1,0 +1,23 @@
+{
+    "name": "design",
+    "version": "1.0.0",
+    "description": "shopping cart",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Dhathri29/ShoppingCart.git"
+    },
+    "author": "dhathri",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Dhathri29/ShoppingCart/issues"
+    },
+    "homepage": "https://github.com/Dhathri29/ShoppingCart#readme",
+    "dependencies": {
+        "ejs": "^3.1.5",
+        "express": "^4.17.1"
+    }
+}

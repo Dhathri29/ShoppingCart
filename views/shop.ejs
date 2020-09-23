@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Spring Shop Online</title>
+        <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+        <th:block th:include="/_header"></th:block>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <style>
+            /* Make the image fully responsive */
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <th:block th:include="/_menu"></th:block>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            class="d-block w-100"
+                            src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/9/22/10513bc6-3f2b-4162-a2f0-8c18aa1ef2e81600799088582-Taavi_Desk.jpg"
+                            alt="First slide"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100"
+                            src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/9/22/0e4efd12-ac4b-4b0c-8a28-fdedf078fb1a1600799088408-Kurtas_W_Desk_Banner--2-.jpg"
+                            alt="Second slide"
+                        />
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="d-block w-100"
+                            src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2020/9/22/99c653af-e8ef-46f4-b527-1dbfb8f33b5f1600799088699-dk--1-.jpg"
+                            alt="Third slide"
+                        />
+                    </div>
+                </div>
+                <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a
+                    class="carousel-control-next"
+                    href="#carouselExampleControls"
+                    role="button"
+                    data-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+        <!-- ------------------------------section end---------------------------------- -->
+
+        <!-- ------------------------------section end---------------------------------- -->
+
+        <section id="product_sec" class="container-fluid pt-5 text-muted">
+            <h2 class="pb-4"><b>DEALS OF THE DAY</b></h2>
+
+            <div class="row">
+                <img
+                    class="px-3"
+                    src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/9/16/5fe79812-5f76-4518-89e3-19396d5810eb1600247348870-get10-deal.png"
+                    width="280"
+                    height="400"
+                />
+
+                <img
+                    class="px-3"
+                    src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/9/22/e032db89-558d-4a4a-9799-9ad6168b995d1600799087986-Extra150.jpg"
+                    width="280"
+                    height="400"
+                />
+
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/9/22/3355f0d0-9db3-4910-8b02-fb4ce547d4f51600799087947-Min.50--4-.jpg"
+                        width="280"
+                        height="400"
+                    />
+                </div>
+
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/9/22/fa2c846b-db56-47a7-9e39-06298200039f1600799088030-Extra10--4-.jpg"
+                        width="280"
+                        height="400"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/9/22/0755178a-df47-41f7-8313-54acd9dfe81c1600799088098-Starting-399--1-.jpg"
+                        width="280"
+                        height="400"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section id="product_sec" class="container-fluid pt-5 text-muted">
+            <h2 class="pb-4"><b>BIGGEST DEALS ON TOP BRANDS</b></h2>
+
+            <div class="row">
+                <img
+                    class="px-3"
+                    src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/0aa11afa-b514-42b7-8438-d8ae02a185721598892141729-USPA.jpg"
+                    width="280"
+                    height="400"
+                />
+
+                <img
+                    class="px-3"
+                    src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/8d60c69b-9a18-413a-8e28-fe823f8304881598892141339-levis.jpg"
+                    width="280"
+                    height="400"
+                />
+
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/c6a4ec29-f907-4d54-8ed7-83006938b20c1598892141612-Tommy-Hilfiger.jpg"
+                        width="280"
+                        height="400"
+                    />
+                </div>
+
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/ed3a8c06-eae3-4754-b266-1ba47a27ad3e1598892141207-GAP.jpg"
+                        width="280"
+                        height="400"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/64ec275a-9d3a-432c-b3df-736a7e9518d11598892141670-UCB.jpg"
+                        width="280"
+                        height="400"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/4abbda25-8d58-44f7-a986-c80fa31b08b31598892141513-Only.jpg"
+                        width="250"
+                        height="400"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/8238147e-a86e-4fe4-a830-ab5c2c49beba1598892141840-W.jpg"
+                        width="250"
+                        height="400"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/ee953e28-7ca8-4e08-a6a9-c51c98f823411598892141010-BIBA.jpg"
+                        width="280"
+                        height="400"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/22b908fa-38aa-46a6-a3cd-a5ccd46b04ce1598892141560-Puma.jpg"
+                        width="280"
+                        height="400"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/85d5e2e1-fa21-43b0-a352-438e15f1006e1598892141455-Nike.jpg"
+                        width="280"
+                        height="400"
+                    />
+                </div>
+            </div>
+        </section>
+
+        <section id="product_sec" class="container-fluid pt-5 text-muted">
+            <h2 class="pb-4"><b>CATEGORIES TO BAG</b></h2>
+            <div class="row">
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/8d992d81-49e6-4dec-89a4-49a8af8beb5d1594222967220-Kurtas-_-Kurta-Sets.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a048cca8-7b5d-417e-9645-ca98f4b6e52c1594222967506-Sarees.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/b0f459a0-9ef0-4392-a9ed-23892a36e79c1594222966859-Dresses.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a4dedaa4-3710-4061-b7d6-ca8c83ce9d021594222967117-Heels.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/18eb31db-8dcb-4efa-b92d-61c8ebe0ee811594222834368-Shorts.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/a352f908-57c8-4c66-b052-18137cf15e6c1594222967074-Handbags.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/9ff1f34e-9242-47fd-9566-e7d7a5c240511594222908483-T-shirt.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/89f1bd9d-3a28-456d-888a-beff717a06f81594222908155-Shirts.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/2bac5e2d-337b-42c0-88c7-3d4e2dc464141594222908262-Shorts-_-Trousers.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/720cf6ef-3be4-4825-8211-0125c942e3821594222907960-Jeans.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/ae14f627-9fd9-41ce-80a4-f107c316c7eb1594222907625-Casual-shoes.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+                <div class="px-3">
+                    <img
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/f0f9b81a-b9d5-4b8b-94d5-ea878fa9b18e1594222834121-Infant-Essential.jpg"
+                        width="208.2"
+                        height="250.35"
+                    />
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
